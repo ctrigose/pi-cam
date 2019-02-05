@@ -1,0 +1,22 @@
+*{
+    font-size: 80pt;
+    font-family: 'Roboto Slab', serif;
+
+}
+body{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    
+}
+h1{
+    text-align: center;
+    margin-top: 10%;
+}
+input{
+    width:60%;
+    margin: -3% 20%;
+    border-style: none;
+    background-color: rgb(161, 161, 161);
+    text-align: center;
+    color: rgb(54, 54, 54);
+}

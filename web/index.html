@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="assets/img/person_icon.png" />
+    <title>PiCam People</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables2.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch1.css">
+</head>
+
+<body>
+    <section class="pricing-table">
+        <div class="container">
+            <div class="center">
+                <div id="namer">
+                    <div id="namer-input">
+                        <input type="text" class="animated infinite flash slower" name="namername" id="username"
+                            placeholder="username">
+                    </div>
+                </div>
+                <p class="lead">Below are the camera feeds linked to your username:</p>
+
+
+                <div class="pricing-area text-center">
+                    <div class="row">
+                        <div class="col-sm-4 plan price red wow fadeInDown">
+                            <ul class="list-group">
+                                <li class="list-group-item heading">
+                                    <h1 id="cam_1">--</h1><span id="state_txt_1" class="price">N/A</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Detect: </p><select id="obj_select_1" name="obj_list">
+                                        <option value="aeroplane">aeroplane</option>
+                                        <option value="bicycle">bicycle</option>
+                                        <option value="bird">bird</option>
+                                        <option value="boat">boat</option>
+                                        <option value="bottle">bottle</option>
+                                        <option value="bus">bus</option>
+                                        <option value="car">car</option>
+                                        <option value="cat">cat</option>
+                                        <option value="cow">cow</option>
+                                        <option value="dog">dog</option>
+                                        <option value="horse">horse</option>
+                                        <option value="motorbike">motorbike</option>
+                                        <option value="person" selected="selected">person</option>
+                                        <option value="sheep">sheep</option>
+                                        <option value="train">train</option>
+                                    </select>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong id="n_people_1" style="font-size:26px;">0</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Last connection</p><em id="last_connection_1">23/11/2018 11:56:41</em>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Min Confidence</p><input id="slider_1" type="range" name="threshold" value="50"
+                                        min="0" max="100" step="1">
+                                    <p id="slider_txt_1"></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="switch">
+                                        <input id="state_1" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label></li>
+                                <li class="list-group-item plan-action"><a id="data_1" href="#" class="btn">Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 plan price green wow fadeInDown">
+                            <ul class="list-group">
+                                <li class="list-group-item heading">
+                                    <h1 id="cam_2">--</h1><span id="state_txt_2" class="price">N/A</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Detect: </p><select id="obj_select_2" name="obj_list">
+                                        <option value="aeroplane">aeroplane</option>
+                                        <option value="bicycle">bicycle</option>
+                                        <option value="bird">bird</option>
+                                        <option value="boat">boat</option>
+                                        <option value="bottle">bottle</option>
+                                        <option value="bus">bus</option>
+                                        <option value="car">car</option>
+                                        <option value="cat">cat</option>
+                                        <option value="cow">cow</option>
+                                        <option value="dog">dog</option>
+                                        <option value="horse">horse</option>
+                                        <option value="motorbike">motorbike</option>
+                                        <option value="person" selected="selected">person</option>
+                                        <option value="sheep">sheep</option>
+                                        <option value="train">train</option>
+                                    </select>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong id="n_people_2" style="font-size:26px;">0</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Last connection</p><em id="last_connection_2">23/11/2018 11:56:41</em>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Min Confidence</p><input id="slider_2" type="range" name="threshold" value="50"
+                                        min="0" max="100" step="1">
+                                    <p id="slider_txt_2">
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="switch">
+                                        <input id="state_2" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label></li>
+                                <li class="list-group-item plan-action"><a id="data_2" href="#" class="btn">Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 plan price yellow wow fadeInDown">
+                            <ul class="list-group">
+                                <li class="list-group-item heading">
+                                    <h1 id="cam_3">--</h1><span id="state_txt_3" class="price">N/A</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Detect: </p><select id="obj_select_3" name="obj_list">
+                                        <option value="aeroplane">aeroplane</option>
+                                        <option value="bicycle">bicycle</option>
+                                        <option value="bird">bird</option>
+                                        <option value="boat">boat</option>
+                                        <option value="bottle">bottle</option>
+                                        <option value="bus">bus</option>
+                                        <option value="car">car</option>
+                                        <option value="cat">cat</option>
+                                        <option value="cow">cow</option>
+                                        <option value="dog">dog</option>
+                                        <option value="horse">horse</option>
+                                        <option value="motorbike">motorbike</option>
+                                        <option value="person" selected="selected">person</option>
+                                        <option value="sheep">sheep</option>
+                                        <option value="train">train</option>
+                                    </select>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong id="n_people_3" style="font-size:26px;">0</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Last connection</p><em id="last_connection_3">23/11/2018 11:56:41</em>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>Min Confidence</p><input id="slider_3" type="range" name="threshold" value="50"
+                                        min="0" max="100" step="1">
+                                    <p id="slider_txt_3">
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="switch">
+                                        <input id="state_3" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label></li>
+                                <li class="list-group-item plan-action"><a id="data_3" href="#" class="btn">Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 plan price default wow fadeInDown">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 plan price default wow fadeInDown">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 plan price red wow fadeInDown">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 plan price default wow fadeInDown">
+                            <ul class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Pricing-Tables.js"></script>
+    <script src="assets/js/Pricing-Tables1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script src="js.js"></script>
+
+</body>
+
+</html>
